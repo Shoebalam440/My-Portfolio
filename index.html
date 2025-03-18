@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shoeb Alam - Professional Portfolio | Full Stack Developer">
+    <meta name="keywords" content="Shoeb Alam, Developer, Python, Web Development, Portfolio">
+    <title>Shoeb Alam - Portfolio</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/alam2.png" as="image">
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="main.js" as="script">
+    
+    <!-- Modern CSS Libraries -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Fallback for JavaScript disabled -->
+    <noscript>
+        <style>
+            [data-aos] {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        </style>
+    </noscript>
+</head>
+<body>
+    <!-- Loading indicator -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <p>Loading your experience...</p>
+        </div>
+    </div>
+
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">
+                <span class="logo-text">Shoeb</span>
+                <span class="logo-dot">.</span>
+            </a>
+
+            <div class="nav-wrapper">
+            <ul id="nav-links">
+                    <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fas fa-user"></i>About</a></li>
+                    <li><a href="#services" class="nav-link"><i class="fas fa-cog"></i>Services</a></li>
+                    <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i>Skills</a></li>
+                    <li><a href="#portfolio" class="nav-link"><i class="fas fa-project-diagram"></i>Projects</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i>Contact</a></li>
+            </ul>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="menu-icon" aria-label="Toggle Menu">
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section id="home" class="home-section pattern-section">
+        <div class="home-content" data-aos="fade-right" data-aos-delay="200">
+            <div class="hello-badge">Hello There!</div>
+            <div class="intro-text">
+                <h1>I'm <span class="highlight">Shoeb Alam</span>,<br>Full Stack Developer<br>Based in India.</h1>
+                <p class="description">I'm a Full Stack Developer with expertise in Python and Web Development.</p>
+            </div>
+            <div class="cta-buttons">
+                <a href="#work" class="cta-button primary">
+                    <span>View My Portfolio</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="cta-button secondary">Hire Me</a>
+            </div>
+        </div>
+        <div class="home-image" data-aos="fade-left" data-aos-delay="400">
+            <div class="home-image-wrapper">
+                <img src="/alamghir2.png" alt="Shoeb Alam - Professional Portrait">
+                <div class="role-badge">
+                    <i class="fas fa-code"></i>
+                    <span>Full Stack Developer</span>
+                </div>
+            </div>
+            <div class="image-decoration decoration-1"></div>
+            <div class="image-decoration decoration-2"></div>
+        </div>
+        <div class="bg-element bg-circle floating-element"></div>
+        <div class="bg-element bg-dots"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section pattern-section">
+        <div class="container">
+            <div class="about-content">
+                
+                
+                <div class="about-text" data-aos="fade-left">
+                    <span class="about-label">About Me</span>
+                    <h2>Who is <span class="highlight">Shoeb Alam</span>?</h2>
+                    
+                    <p class="about-description">I'm Shoeb Alam, a passionate Python Developer skilled in AI and web development. I build innovative solutions like AI-driven traffic management and offensive content detection while continuously learning and exploring new technologies. </p>
+                    
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <h3>5+</h3>
+                            <p>Project Completed</p>
+                        </div>
+                        
+                        <div class="stat-item">
+                            <h3>1+</h3>
+                            <p>Years of Experience</p>
+                        </div>
+                    </div>
+
+                    <div class="cv-button-container">
+                        <a href="Resume.pdf" class="cv-button" download>
+                            Download CV
+                            <span class="arrow-icon">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="portfolio" class="work-section pattern-section">
+        <div class="section-header">
+            <h2>Portfolio</h2>
+            <p class="section-subtitle">Recent Projects</p>
+        </div>
+        <div class="gallery">
+            <!-- AI Traffic Management System -->
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&auto=format&fit=crop&q=60" alt="AI Traffic Management System">
+                <div class="project-info">
+                    <h3>AI Traffic Management System</h3>
+                    <p>An intelligent system using computer vision and machine learning to optimize traffic flow and reduce congestion.</p>
+                    <a href="#" class="project-link" target="_blank">View Project</a>
+                </div>
+            </div>
+
+            <!-- Offensive Content Detection -->
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800&auto=format&fit=crop&q=60" alt="Offensive Content Detection">
+                <div class="project-info">
+                    <h3>Offensive Content Detection</h3>
+                    <p>AI-powered system for detecting and filtering inappropriate content using natural language processing.</p>
+                    <a href="#" class="project-link" target="_blank">View Project</a>
+                </div>
+            </div>
+
+            <!-- Real-time Object Detection -->
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=800&auto=format&fit=crop&q=60" alt="Real-time Object Detection">
+                <div class="project-info">
+                    <h3>Real-time Object Detection</h3>
+                    <p>Computer vision system using YOLO and OpenCV for real-time object detection and tracking.</p>
+                    <a href="#" class="project-link" target="_blank">View Project</a>
+                </div>
+            </div>
+
+            <!-- Web Development Projects -->
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60" alt="Web Development Projects">
+                <div class="project-info">
+                    <h3>Web Development Projects</h3>
+                    <p>Modern responsive websites built with HTML, CSS, JavaScript, and React.</p>
+                    <a href="#" class="project-link" target="_blank">View Project</a>
+                </div>
+            </div>
+
+            <!-- Data Analysis Projects -->
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60" alt="Data Analysis Projects">
+                <div class="project-info">
+                    <h3>Data Analysis Projects</h3>
+                    <p>Data-driven solutions using Python, machine learning, and statistical analysis.</p>
+                    <a href="#" class="project-link" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="skills-section pattern-section">
+        <div class="bg-element bg-lines"></div>
+        <div class="bg-element bg-circle floating-element"></div>
+        <div class="section-header">
+            <h2>Skills</h2>
+            <p class="section-subtitle">Technical Expertise</p>
+        </div>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3>Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="/python.png" alt="Python">
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="/png-clipart-c-logo-c-programming-language-icon-letter-c-blue-logo-thumbnail-removebg-preview.png" alt="C">
+                        <span>C</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>Web Technologies</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>Tools & Technologies</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="/git.png" alt="Git">
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="/github.png" alt="GitHub">
+                        <span>GitHub</span>
+                </div>
+                    <div class="skill-item">
+                        <img src="/vs code.png" alt="VS Code">
+                        <span>VS Code</span>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="services" class="services-section pattern-section">
+        <div class="section-header">
+            <span class="section-label">What I Do</span>
+            <h2>My <span class="highlight">Services</span></h2>
+        </div>
+        <div class="services-grid">
+            <!-- Web Development Service -->
+            <div class="service-card">
+                <div class="service-icon">
+                <i class="fas fa-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Creating responsive and modern websites using HTML, CSS, JavaScript, and React. Building user-friendly interfaces with optimal performance.</p>
+                <a href="#contact" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- AI/ML Services -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>AI/ML Solutions</h3>
+                <p>Developing intelligent applications with machine learning models, including real-time object detection, image recognition, and predictive analytics.</p>
+                <a href="#contact" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Real-time Object Detection -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <h3>Real-time Object Detection</h3>
+                <p>Implementing advanced computer vision solutions using YOLO, TensorFlow, and OpenCV for real-time object detection and tracking.</p>
+                <a href="#contact" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Data Analysis -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Data Analysis</h3>
+                <p>Analyzing complex datasets, creating predictive models, and developing data-driven solutions using Python and machine learning libraries.</p>
+                <a href="#contact" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact-section pattern-section">
+        <div class="bg-element bg-circle floating-element"></div>
+        <div class="bg-element bg-lines"></div>
+        <div class="section-header">
+        <h2>Contact Me</h2>
+            <p class="section-subtitle">Get in Touch</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>shoebalam440@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91 8857091578</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Nagpur, Maharashtra India</p>
+                    </div>
+                </div>
+            </div>
+            <form name='submit-to-google-sheet'>
+                <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+                </div>
+            <button type="submit" class="send-button">Send Message</button>
+        </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Shoeb Alam</h3>
+                <p>Full Stack Developer</p>
+            </div>
+        <div class="social-links">
+                <a href="https://github.com/shoebalam440" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com/shoeb4lam" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/shoeb-alam-6079b0257" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="copyright">&copy; 2024 Shoeb Alam. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Modern JavaScript Libraries -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+    
+    <script>
+        // Remove loader when page is loaded
+        window.addEventListener('load', function() {
+            document.getElementById('loader').style.display = 'none';
+        });
+
+        // Fallback for images
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.getElementsByTagName('img');
+            for (let img of images) {
+                img.onerror = function() {
+                    this.src = 'placeholder.png'; // Replace with a default image
+                    this.alt = 'Image not available';
+                };
+            }
+        });
+      </script>
+</body>
+</html>
